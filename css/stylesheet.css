@@ -1,0 +1,57 @@
+/* font-family: 'Source Sans Pro', sans-serif; */
+
+body {
+    margin: 0;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 1rem;
+    color: #404040;
+    text-align: center;
+}
+
+/* Typography */
+h1 {
+    font-size: 2.25rem; /* 36px */
+    font-weight: 400;
+}
+
+h1 + p,
+.intro-top-text {
+    color:#F18119;
+}
+
+h1 + p {
+    font-size: 1.3125rem;
+    font-weight: 900;
+    text-transform: uppercase; 
+    letter-spacing: .08rem;
+}
+/* another way to do this, where clas is define in HTML
+.intro-bottom-text {
+    color: #F18119;
+    font-size: 1.3125rem;
+    font-weight: 900;
+ } */
+
+h2 {
+    font-size: 1.3125rem; /* 21px */
+}
+
+h2 + p {
+    color: #F18119;
+    font-size: 1rem;
+    font-weight: 900;
+    text-transform: uppercase;
+    letter-spacing: 0.1rem;
+}
+
+.intro-top-text {
+    font-size: 0.625rem;
+    font-weight: 900;
+    border-top: 9px solid #F18119;
+    text-transform: uppercase;
+    letter-spacing: .1rem;
+}
+
+strong {
+    font-weight: 900;
+}
