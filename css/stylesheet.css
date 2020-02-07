@@ -1,5 +1,9 @@
 /* font-family: 'Source Sans Pro', sans-serif; */
 
+* {
+    box-sizing: border-box;
+}
+
 body {
     margin: 0;
     font-family: 'Source Sans Pro', sans-serif;
@@ -28,9 +32,9 @@ h1 + p {
     font-weight: 900;
     text-transform: uppercase; 
     letter-spacing: .08rem;
-    margin-top: 0;
+    margin: 0;
 }
-/* another way to do this, where clas is define in HTML
+/* another way to do this, where class is define in HTML
 .intro-bottom-text {
     color: #F18119;
     font-size: 1.3125rem;
@@ -55,7 +59,7 @@ h2 + p {
 .intro-top-text {
     font-size: 0.625rem;
     font-weight: 900;
-    border-top: 9px solid #F18119;
+    /* border-top: 9px solid #F18119; */
     text-transform: uppercase;
     letter-spacing: .1rem;
     margin-top: 0;
@@ -83,6 +87,9 @@ intro
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    background-size: cover;
+    background-position: center;
+    min-height: 50vh;
 }
 
 /*============
@@ -93,12 +100,63 @@ main-content
     padding: 2em 1em;
 }
 
+.intro > *,
+.main-content > * {
+    max-width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Another way to do it, add a container and container-intro class in html
+This is to maintain the width space from overly spread out and looking awkward
+for .intro and .main-content section
+
+.container {
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+.container-intro {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 50vh;
+}
+*/
+
 /*============
 media-query
 ==============*/
 
 @media (min-width:500px) {
     body {
-        background-color: aquamarine;
+        font-size: 1.125rem;
+        display:flex;
     }
+
+    h1 {
+        font-size: 3.5rem;
+    }
+
+    h2,
+    h1 + p {
+        font-size: 1.75rem;
+    }
+
+    h2 + p {
+        font-size: 1.125rem;
+    }
+
+    .intro,
+    .main-content {
+        width:50%;
+        min-height: 100vh;
+    }
+
+    .main-content {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
 }
