@@ -8,10 +8,14 @@ body {
     text-align: center;
 }
 
-/* Typography */
+/*============
+Typography
+==============*/
 h1 {
+    color: #FFF;
     font-size: 2.25rem; /* 36px */
     font-weight: 400;
+    margin: 2em 0;
 }
 
 h1 + p,
@@ -24,6 +28,7 @@ h1 + p {
     font-weight: 900;
     text-transform: uppercase; 
     letter-spacing: .08rem;
+    margin-top: 0;
 }
 /* another way to do this, where clas is define in HTML
 .intro-bottom-text {
@@ -34,6 +39,8 @@ h1 + p {
 
 h2 {
     font-size: 1.3125rem; /* 21px */
+    font-weight: 900;
+    margin: 0;
 }
 
 h2 + p {
@@ -42,6 +49,7 @@ h2 + p {
     font-weight: 900;
     text-transform: uppercase;
     letter-spacing: 0.1rem;
+    margin-top: 0;
 }
 
 .intro-top-text {
@@ -50,8 +58,47 @@ h2 + p {
     border-top: 9px solid #F18119;
     text-transform: uppercase;
     letter-spacing: .1rem;
+    margin-top: 0;
+    order: -1;
+}
+
+.main-content-fine-text {
+    font-size: 0.625rem;
+    color: #989898;
+    letter-spacing: 1px;
 }
 
 strong {
     font-weight: 900;
+}
+
+/*============
+intro
+==============*/
+
+.intro {
+    background-color: #404040;
+    background-image:url(../images/dark-ribs.jpg);
+    padding: 0.5em 2em;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+/*============
+main-content
+==============*/
+
+.main-content {
+    padding: 2em 1em;
+}
+
+/*============
+media-query
+==============*/
+
+@media (min-width:500px) {
+    body {
+        background-color: aquamarine;
+    }
 }
