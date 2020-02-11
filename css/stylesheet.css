@@ -45,6 +45,7 @@ h2 {
     font-size: 1.3125rem; /* 21px */
     font-weight: 900;
     margin: 0;
+    color:#404040;
 }
 
 h2 + p {
@@ -66,10 +67,15 @@ h2 + p {
     order: -1;
 }
 
+.main-content {
+    color: #989898;
+    font-weight: 300;
+}
+
 .main-content-fine-text {
     font-size: 0.625rem;
-    color: #989898;
     letter-spacing: 1px;
+    font-weight:400;
 }
 
 strong {
@@ -123,6 +129,55 @@ for .intro and .main-content section
     min-height: 50vh;
 }
 */
+
+/*============
+form
+==============*/
+.email-collector {
+    width: 80%;
+    max-width: 250px;
+}
+
+input,
+.btn {
+    font-family: inherit;
+    width: 100%;
+    border-radius: 5px;
+}
+
+input {
+    font-size: 1rem;
+    font-weight: 300;
+    color: #989898;
+    text-align: inherit;
+    margin-bottom: 0.875em;
+    padding: .5em 0;
+    border: 1px solid #818181;
+}
+
+.btn {
+    display: inline-block;
+    font-size: 0.625rem;
+    font-weight: 900;
+    text-transform: uppercase;
+    padding: 1.125em 2em;
+    letter-spacing: 1.2px;
+    border: 0;
+    cursor: pointer;  
+}
+
+.btn-primary {
+    background-image: linear-gradient(270deg, #FF713B, #FFA51D);
+    color: #FFF;
+    transition: color .25s;
+}
+
+.btn-primary:hover,
+.btn-primary:focus {
+    color: #000;
+}
+
+
 
 /*============
 media-query
