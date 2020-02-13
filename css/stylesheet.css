@@ -60,10 +60,11 @@ h2 + p {
 .intro-top-text {
     font-size: 0.625rem;
     font-weight: 900;
-    /* border-top: 9px solid #F18119; */
+    border-top: 5px solid #F18119;
     text-transform: uppercase;
     letter-spacing: .1rem;
-    margin-top: 0;
+    padding-top: 3px;
+    margin: 0;
     order: -1;
 }
 
@@ -89,7 +90,9 @@ intro
 .intro {
     background-color: #404040;
     background-image:url(../images/dark-ribs.jpg);
-    padding: 0.5em 2em;
+    /* background-image:url(../images/ribs.jpg); */
+    /* background-blend-mode: multiply; */
+    padding: 0 0.5em 2em;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -166,15 +169,23 @@ input {
     cursor: pointer;  
 }
 
+.btn-primary,
+input:focus {
+    transform: scale(1);
+    transition: transform 250ms;
+}
+
 .btn-primary {
     background-image: linear-gradient(270deg, #FF713B, #FFA51D);
     color: #FFF;
-    transition: color .25s;
+    /* transition: color .25s; */
 }
 
 .btn-primary:hover,
-.btn-primary:focus {
-    color: #000;
+.btn-primary:focus,
+input:focus{
+    /* color: #000; */
+    transform: scale(1.1);
 }
 
 
